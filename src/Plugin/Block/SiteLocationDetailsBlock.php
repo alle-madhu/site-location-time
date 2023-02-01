@@ -117,7 +117,7 @@ class SiteLocationDetailsBlock extends BlockBase implements ContainerFactoryPlug
       '#currentTime' => $this->timeZoneService->getTimezoneCurrentTime()
     ];
     //adding config_form object as dependency so
-    //when this object get updated cache of the blocj will get invalidated
+    //when this object get updated cache of the object will get invalidated
     $this->renderer->addCacheableDependency($build, $config_form);
     return $build;
   }
