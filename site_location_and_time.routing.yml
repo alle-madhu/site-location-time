@@ -1,0 +1,9 @@
+site_location_and_time.location_and_timezone_form:
+  path: '/admin/config/site/site-location-time'
+  defaults:
+    _form: '\Drupal\site_location_and_time\Form\LocationAndTimezoneForm'
+    _title: 'Location and timezone form'
+  requirements:
+    _permission: 'access administration pages'
+  options:
+    _admin_route: TRUE

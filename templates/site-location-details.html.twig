@@ -1,0 +1,50 @@
+{#
+/**
+* @file
+* Default theme implementation to display a block.
+*
+* @see template_preprocess_block()
+*
+* @ingroup themeable
+*/
+#}
+{% set classes = [
+    'clear-both',
+] %}
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<style>
+			.current-time {
+				font: caption;
+			}
+			.current-day p {
+				margin: 0;
+			}
+			.current-day {
+				margin-top: 8px
+			}
+		</style>
+	</head>
+	<body>
+		<div class="site-location-time-info">
+			<div {{ attributes.addClass(classes) }}>
+				<div
+					class="current-time">
+					<b>{{ currentTime|split('-')|last }}</b>
+				</div>
+				<div class="current-day">
+					<p>{{ currentTime.value|date('l') ~ ', ' ~ currentTime.value|date('d F Y')}}
+					</p>
+				</div>
+				<div class="site-location-wrapper">
+					<p id="site-location-details">
+					{{ 'Time in ' ~ city ~ ', ' ~ country ~ '.' }}
+					</p>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

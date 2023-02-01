@@ -1,0 +1,7 @@
+name: 'Site location and time'
+type: module
+description: 'Gives site location and current time based the timezone - updated'
+core_version_requirement: ^8 || ^9
+package: 'Specbee assignment'
+dependencies:
+  - drupal:block

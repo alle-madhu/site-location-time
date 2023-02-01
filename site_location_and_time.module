@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Contains site_location_and_time.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+
+/**
+ * Implements hook_theme().
+ */
+function site_location_and_time_theme() {
+  return [
+    'site_location_details' => [
+      'variables' => [
+        'currentTime' => '',
+        'country' => '',
+        'city' => '',
+      ],
+    ],
+  ];
+}

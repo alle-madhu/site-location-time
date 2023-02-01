@@ -1,0 +1,6 @@
+site_location_and_time.location_and_timezone_form:
+  title: 'Site Location'
+  route_name: site_location_and_time.location_and_timezone_form
+  description: 'A description for the menu entry'
+  parent: system.admin_config_system
+  weight: 99
