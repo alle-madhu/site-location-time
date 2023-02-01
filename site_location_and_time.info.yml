@@ -1,6 +1,6 @@
 name: 'Site location and time'
 type: module
-description: 'Gives site location and current time based the timezone - updated'
+description: 'Gives site location and current time based the timezone'
 core_version_requirement: ^8 || ^9
 package: 'Specbee assignment'
 dependencies:
