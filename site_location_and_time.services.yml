@@ -1,3 +1,4 @@
 services:
   site_location_and_time.current_time_based_on_timezone:
     class: Drupal\site_location_and_time\Service\ServiceToGetTimezoneCurrentTime
+    arguments: ['@config.factory']
